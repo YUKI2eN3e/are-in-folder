@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "are-in-folder"
+version = "0.1.0"
+description = "Check if files in one folder are also in another folder"
+authors = ["Yuki Nagato <37764578+YUKI2eN3e@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "src", from = "."}]
+
+[tool.poetry.scripts]
+are-in-folder = "src.main:run"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.3.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
